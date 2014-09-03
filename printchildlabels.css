@@ -1,0 +1,110 @@
+body {
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	visibility: visible;
+
+}
+
+/* overrides decoration from previous rule for hovered links */
+/*IE does not support h0 or higher than h6*/
+ h1, h2, h3, h5, h6{
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*used for Name and Medical*/
+h1{
+	font:"Monotype Corsiva";
+ font-size: 26px;
+ color: #000000;
+}
+
+/*used for Birthday and Grade*/
+h2{
+	font:"Monotype Corsiva";
+ font-size: 22px;
+ color: #000000;
+}
+/***********************************************/
+
+/* Layout Divs                                 */
+
+/***********************************************/
+#web {
+	width: 940px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	float: left;
+	display: none;
+}
+
+
+#masthead {
+	/*background-image: url(Templates/hdr.png);*/
+	height: 150px;
+	width: 940px;
+	display: none;
+}
+
+.stylemasthead{ /* is used for the font in the header*/
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 12px;
+	 color:#000000;
+}
+
+#sidebar{
+	/*background-image: url(Templates/cntr.png);*/
+	background-repeat: repeat-y;
+	float:left;
+	width: 150px;
+	height: 200px;
+	display: none;
+}
+#content {
+	/*background-image: url(Templates/cntr.png);*/
+	background-repeat: repeat-y;
+	float:right;
+	margin:0 auto;
+	width: 790px;
+	height: 200px;
+	display: none;
+}
+#printchildlabels{
+	/*position: absolute;
+	left: 115px;
+	width: 685px;
+	top: 120px;*/
+	float: left;
+	background-color:#FFFFFF;
+	visibility: visible;
+
+}
+
+/* adjust margins to change separation between the feature image and text flowing around it */
+/************** .defualtfont styles ***************/
+.defualtfont{
+	padding: 0px 0px 10px 10px;
+	font-size: 12px;
+}
+
+/*********** .textbox styles ***********/
+.textbox{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+}
+.textbox font{
+	font-size: 12px;
+    color: #000000;
+}
+/*********** .table styles ***********/
+.table{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+}
+.table font{
+	font-size: 12px;
+    color: #000000;
+}

@@ -1,0 +1,247 @@
+body {
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-image: url(Templates/bkgd.jpg);
+	background-repeat: repeat-x;
+}
+ a:link, a:visited, a:active  {
+	color: #0000aa;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* overrides decoration from previous rule for hovered links */
+/*IE does not support h0 or higher than h6*/
+ h1, h2, h3, h5, h6{
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*used for Precision Agriculture*/
+h1{
+	font:"Monotype Corsiva";
+ font-size: 26px;
+ color: #000000;
+}
+/*used for Page Title*/
+h2{
+ font-size: 14px;
+ color: #000000;
+}
+/*Titles used often*/
+h3{
+ font-size: 12px;
+ color: #334d55;
+}
+/*used for the logged on section*/
+h5{
+ font-size: 13px;
+ color: #000000;
+}
+
+/*used for "Providing Remote Sensing Technologies"*/
+h6{
+ font-size: 12px;
+ color: #000000;
+}
+ul{
+ list-style-type: disc;
+}
+ul ul{
+ list-style-type: disc;
+}
+ul ul ul{
+ list-style-type: none;
+}
+label{
+ font: bold 100% Arial,sans-serif;
+ color: #334d55;
+}
+/***********************************************/
+
+/* Layout Divs                                 */
+
+/***********************************************/
+#web {
+	width: 940px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	float: left;
+}
+
+
+#masthead {
+	/*background-image: url(Templates/hdr.png);*/
+	height: 150px;
+	width: 940px;
+}
+
+.stylemasthead{ /* is used for the font in the header*/
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 12px;
+	 color:#000000;
+}
+
+#sidebar{
+	/*background-image: url(Templates/cntr.png);*/
+	background-repeat: repeat-y;
+	float:left;
+	width: 150px;
+}
+#content {
+	/*background-image: url(Templates/cntr.png);
+	background-repeat: repeat-y;
+	float:right;
+	margin:0 auto;
+	width: 790px;
+	height: 200px;
+	left: 150px;*/
+	position:absolute;
+	top: 150px;
+	left: 150px;
+
+}
+/*#footer {
+	background-image: url(Templates/ftr.png);
+	width: 740px;
+	height: 125px;
+}
+*/
+/*#footer p {
+/*	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+/*	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+/*}*/
+#printchildlabels{
+	position: absolute;
+	/*left: 115px;
+	top: 120px;*/
+	width: 685px;
+	background-color:#FFFFFF;
+	visibility: hidden;
+
+}
+
+/***********************************************/
+
+/*Component Divs                               */
+
+/***********************************************/
+
+#siteName{
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+}
+/*************** #pageName styles **************/
+#pageName{
+	font-size: 18px;
+	padding: 0px 0px 10px 10px;
+}
+
+/************** .title styles *****************/
+.title{
+	margin: 0px;
+	padding: 0px 0px 0px 3px;
+	font-size: 12px;
+	font-weight: bold;
+    color: #000000;
+}
+/************** .feature styles ***************/
+.feature{
+	padding: 0px 0px 10px 10px;
+	font-size: 12px;
+}
+.feature h3{
+	padding: 30px 0px 5px 0px;
+	text-align: center;
+}
+.feature img{
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: 0 5px 5px 0;
+}
+.feature  a:link, a:visited, a:active  {
+	color: #0000aa;
+	font-weight:bold;
+	text-decoration: none;
+}
+.feature a:hover {
+	text-decoration: underline;
+}
+/* adjust margins to change separation between the feature image and text flowing around it */
+/************** .defualtfont styles ***************/
+.defualtfont{
+	padding: 0px 0px 10px 10px;
+	font-size: 11px;
+}
+
+/*********** .textbox styles ***********/
+.textbox{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+}
+.textbox font{
+	font-size: 11px;
+    color: #000000;
+}
+/*********** .table styles ***********/
+.table{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+}
+.table font{
+	font-size: 11px;
+    color: #000000;
+}
+/*********** .button styles ***********/
+.button{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 22px;
+	font-weight:bold;
+}
+
+.button font{
+	font-size: 11px;
+    color: #000000;
+}
+/*********** .relatedLinks styles ***********/
+.relatedLinks{
+	margin: 0px;
+	font-size: 11px;
+}
+
+/*Related links*/
+.relatedLinks h4{
+	font-size: 11px;
+	font-weight:bold;
+	color: #0000aa;
+}
+
+.relatedLinks h5{
+	font-size: 11px;
+	/*top right bottom left*/
+	padding: 2px 0px 2px 5px;
+}
+
+.relatedLinks  a:link, a:visited, a:active {
+	margin: 0px;
+	font-weight:bold;
+    color: #0000aa;
+	text-decoration: none
+}
+
+
+
+.relatedLinks a:hover {
+	text-decoration: underline;
+}

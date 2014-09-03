@@ -1,0 +1,274 @@
+body{
+	font-family: Arial,sans-serif;
+	color: #333333;
+	line-height: 1.166;	
+	margin: 8px;
+	padding: 0px;
+}
+ a:link, a:visited, a:active  {
+	color: #AA0088;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* overrides decoration from previous rule for hovered links */
+/*IE does not support h0 or higher than h6*/
+ h1, h2, h3, h5, h6{
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*used for Name and Medical*/
+h1{
+	font:"Monotype Corsiva";
+ 	font-size: 28px;
+ 	color: #AA0088;
+}
+/*used for Grade and Birthday*/
+h2{
+	font:"Monotype Corsiva";
+ 	font-size: 28px;
+ 	color: #AA0088;
+}
+/*Titles used often*/
+h3{
+ font-size: 12px;
+ color: #334d55;
+}
+/*used for the logged on section*/
+h5{
+ font-size: 13px;
+ color: #000000;
+}
+
+/*used for "Providing Remote Sensing Technologies"*/
+h6{
+ font-size: 12px;
+ color: #000000;
+}
+ul{
+ list-style-type: disc;
+}
+ul ul{
+ list-style-type: disc;
+}
+ul ul ul{
+ list-style-type: none;
+}
+label{
+ font: bold 100% Arial,sans-serif;
+ color: #334d55;
+}
+/***********************************************/
+
+/* Layout Divs                                 */
+
+/***********************************************/
+
+#masthead{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	padding: 0px;
+	width: 790px;
+	font-size:12px;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #eeeeee;
+	visibility: hidden;
+}
+
+.stylemasthead{ /* is used for the font in the header*/
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 12px;
+	 color:#000000;
+}
+
+#whiteBar{
+	width: 153px;
+	border-bottom:2px solid #eeeeee;
+	visibility: hidden;
+}
+#sidebar{
+	position: absolute;
+	left: 10px;
+	top: 120px;
+	width: 105px;
+	background-color:#FFFFFF;
+	color: #AA0088;
+	line-height: 1.166;
+	visibility: hidden;
+
+}
+#content{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color:#FFFFFF;
+	visibility: visible;
+
+}
+
+#printchildlabels{
+	position: absolute;
+	left: 115px;
+	top: 120px;
+	width: 685px;
+	background-color:#FFFFFF;
+	visibility: hidden;
+
+}
+
+/***********************************************/
+
+/*Component Divs                               */
+
+/***********************************************/
+
+#siteName{
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+}
+/*************** #pageName styles **************/
+#pageName{
+	font-size: 18px;
+	padding: 0px 0px 10px 10px;
+}
+
+/************* #globalNav styles **************/
+#globalNav{
+color: #cccccc;
+/*padding: 0px 0px 0px 10px;*/
+white-space: nowrap;
+}
+/* 'nowrap' prevents links from line-wrapping if there are too many to fit in one line
+   this will force a horizontal scrollbar if there isn't enough room for all links
+   remove rule or change value to 'normal' if you want the links to line-wrap */
+#globalNav img{
+ display: block;
+}
+#globalNav a {
+	font-size: 12px;
+	padding: 0px 4px 0px 0px; 
+}
+/************** .title styles *****************/
+.title{
+	margin: 0px;
+	padding: 0px 0px 0px 3px;
+	font-size: 12px;
+	font-weight: bold;
+    color: #000000;
+}
+/************** .feature styles ***************/
+.feature{
+	padding: 0px 0px 10px 10px;
+	font-size: 12px;
+}
+.feature h3{
+	padding: 30px 0px 5px 0px;
+	text-align: center;
+}
+.feature img{
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: 0 5px 5px 0;
+}
+.feature  a:link, a:visited, a:active  {
+	color: #AA0088;
+	font-weight:bold;
+	text-decoration: none;
+}
+.feature a:hover {
+	text-decoration: underline;
+}
+/* adjust margins to change separation between the feature image and text flowing around it */
+/************** .defualtfont styles ***************/
+.defualtfont{
+	padding: 0px 0px 10px 10px;
+	font-size: 12px;
+}
+
+/************** .story styles *****************/
+.story{
+	clear: both;
+	padding: 10px 0px 0px 10px;
+	font-size: 12px;
+}
+
+.story p{
+	padding: 0px 0px 10px 0px;
+}
+/*********** #navBar link styles ***********/
+#navBar ul a:link, #navBar ul a:visited {display: block;}
+#navBar ul {list-style: none; margin: 0; padding: 0;}
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#navBar li {border-bottom: none; /*border-bottom: 1px solid #EEE;*/}
+/* fix for browsers that don't need the hack */
+html>body #navBar li {border-bottom: none;}
+
+/*********** .textbox styles ***********/
+.textbox{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+}
+.textbox font{
+	font-size: 12px;
+    color: #000000;
+}
+/*********** .table styles ***********/
+.table{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 16px;
+}
+.table font{
+	font-size: 16px;
+    color: #000000;
+}
+/*********** .button styles ***********/
+.button{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.button font{
+	font-size: 12px;
+    color: #000000;
+}
+/*********** .relatedLinks styles ***********/
+.relatedLinks{
+	margin: 0px;
+	font-size: 12px;
+}
+
+/*Related links*/
+.relatedLinks h4{
+	font-size: 12px;
+	font-weight:bold;
+	color: #AA0088;
+}
+
+.relatedLinks h5{
+	font-size: 12px;
+	/*top right bottom left*/
+	padding: 2px 0px 2px 5px;
+}
+
+.relatedLinks  a:link, a:visited, a:active {
+	margin: 0px;
+	font-weight:bold;
+    color: #AA0088;
+	text-decoration: none
+}
+
+
+
+.relatedLinks a:hover {
+	text-decoration: underline;
+}
