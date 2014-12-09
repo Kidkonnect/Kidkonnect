@@ -45,11 +45,11 @@ else {
 			<table border="0" class="table">
 			 <tr>
 			  <td><!--Picture --> <?php echo '<img width="300" src = "/ChildPictures/', $row_Sort['ChildID'], '.jpg">';?></td>
-			  <td ><!--Status --> <?php include ('/var/www/status.php'); ?></td> 
+			  <td ><!--Status --> <?php include ('/var/www/childinfostatus.php'); ?></td> 
 			 </tr>
 			 <tr>
-			   <td valign="top"><!--Child --> <?php include ('/var/www/childdata.php'); ?></td>
-			   <td><!--Parents --><?php include ('/var/www/parentdata.php'); ?></td> 
+			   <td valign="top"><!--Child --> <?php include ('/var/www/childinfodata.php'); ?></td>
+			   <td><!--Parents --><?php include ('/var/www/childinfoparents.php'); ?></td> 
 			 </tr>
 			 <tr>
 			   <td><!--Printer --> <?php //include ('/var/www/printer.php'); ?></td>
