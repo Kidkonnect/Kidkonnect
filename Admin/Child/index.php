@@ -285,7 +285,7 @@ else{
 				<td>Photo</td>
 				<td>Delete</td>
 				<td>ChildID</td>
-				<td>FirstName</a></td>
+				<td>FirstName</td>
 				<td>LastName</td>
 				<td>Address</td>       
 				<td>City</td>
@@ -293,7 +293,6 @@ else{
 				<td>Grade</td>
 				<td>AgeGrp</td>
 				<td>Birthday</td>
-				<?php//<td>DateEntered&GradeSort=<?php echo $passedGrade">DateEntered</td>?>       
 				<td>Status</td>
 				<td>StatusChange</td>
 				<td>Allergies</td>
@@ -318,7 +317,6 @@ else{
 				<td align="left" nowrap="true"><?php echo $row_Sort['Grade']; ?>&nbsp;</td>
 				<td align="left" nowrap="true"><?php echo $row_Sort['AgeGroup']; ?>&nbsp;</td>
 				<td align="left" nowrap="true"><?php echo $row_Sort['Birthday']; ?>&nbsp;</td>
-				<?php//<td align="left" nowrap="true"><?php echo $row_Sort['DateEntered']; &nbsp;</td>?>
 				<td align="left" nowrap="true"><a href="/childinfo.php?passedChildID=<?php echo $row_Sort['ChildID']; ?>"><?php echo $row_Sort['Status']; ?></a>&nbsp;</td>
 				<td align="left" nowrap="false"><?php echo $row_Sort['StatusChange']; ?>&nbsp;</td>
 				<td align="left" width="75"><?php echo $row_Sort['Allergies']; ?>&nbsp;</td>
