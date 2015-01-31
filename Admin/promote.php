@@ -17,6 +17,9 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form2")) {
   //reset all other filters
   $passedFilter = "";
   //check to see what boxes were checked
+  if (isset($_POST['Kindergarten'])){ 
+    $query_Sort = $query_Sort." Grade='Kindergarten' OR"; 
+  }
   if (isset($_POST['1st_Grade'])){ 
     $query_Sort = $query_Sort." Grade='1st_Grade' OR"; 
   }
@@ -80,7 +83,8 @@ if (strlen($query_Sort) > 30){
 			<table width="800" border="1" class="table"><tr><td>
 			<table width="800"  class="table" border="0">
 			  
-			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
+			  <tr>	<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td>
+				<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="2nd_Grade" id="textbox" <?php if (isset($_POST['2nd_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>2nd_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="3rd_Grade" id="textbox" <?php if (isset($_POST['3rd_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>3rd_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="4th_Grade" id="textbox" <?php if (isset($_POST['4th_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>4th_Grade</td>    <td>&nbsp;</td>
@@ -106,10 +110,11 @@ if (strlen($query_Sort) > 30){
 			  //also change the Agegroup
 			  $Grade = $row_Sort['Grade'];
 			  $AgeGroup = $row_Sort['AgeGroup'];
-			  if ($row_Sort['Grade'] == '1st_Grade'){ $Grade = "2nd_Grade"; $AgeGroup = "1-5";}
-			  if ($row_Sort['Grade'] == '2nd_Grade'){ $Grade = "3rd_Grade"; $AgeGroup = "1-5";}
-			  if ($row_Sort['Grade'] == '3rd_Grade'){ $Grade = "4th_Grade"; $AgeGroup = "1-5";}
-			  if ($row_Sort['Grade'] == '4th_Grade'){ $Grade = "5th_Grade"; $AgeGroup = "1-5";}
+			  if ($row_Sort['Grade'] == 'Kindergarten'){ $Grade = "1st_Grade"; $AgeGroup = "K-5";}
+			  if ($row_Sort['Grade'] == '1st_Grade'){ $Grade = "2nd_Grade"; $AgeGroup = "K-5";}
+			  if ($row_Sort['Grade'] == '2nd_Grade'){ $Grade = "3rd_Grade"; $AgeGroup = "K-5";}
+			  if ($row_Sort['Grade'] == '3rd_Grade'){ $Grade = "4th_Grade"; $AgeGroup = "K-5";}
+			  if ($row_Sort['Grade'] == '4th_Grade'){ $Grade = "5th_Grade"; $AgeGroup = "K-5";}
 			  if ($row_Sort['Grade'] == '5th_Grade'){ $Grade = "6th_Grade"; $AgeGroup = "6-8";}
 			  if ($row_Sort['Grade'] == '6th_Grade'){ $Grade = "7th_Grade"; $AgeGroup = "6-8";}
 			  if ($row_Sort['Grade'] == '7th_Grade'){ $Grade = "8th_Grade"; $AgeGroup = "6-8";}
