@@ -19,7 +19,7 @@ $passedEvent = $_GET['EventSort']; //Sunday Encounter
 if (!isset($passedEvent)) {
 	$passedEvent = "";
 }
-$passedVolunteerLocation = $_GET['VolunteerLocationSort']; //N-K, 1-5
+$passedVolunteerLocation = $_GET['VolunteerLocationSort']; //N-K, K-5
 if (!isset($passedVolunteerLocation)) {
 	$passedVolunteerLocation = "";
 }

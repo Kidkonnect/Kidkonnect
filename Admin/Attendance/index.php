@@ -198,7 +198,7 @@ else if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form4")) {
   if (isset($_POST['12th_Grade'])){ $string_part .= $string_base."Grade='12th_Grade' OR ";}
   
   if (isset($_POST['N-K'])){ $string_part .= $string_base."AgeGroup='N-K' OR ";}
-  if (isset($_POST['1-5'])){ $string_part .= $string_base."AgeGroup='1-5' OR ";}
+  if (isset($_POST['K-5'])){ $string_part .= $string_base."AgeGroup='K-5' OR ";}
   if (isset($_POST['6-8'])){ $string_part .= $string_base."AgeGroup='6-8' OR ";}
   if (isset($_POST['9-12'])){ $string_part .= $string_base."AgeGroup='9-12' OR ";}
 
@@ -337,7 +337,7 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				<td> <input name="12th_Grade" id="textbox" <?php if (isset($_POST['12th_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>12th_Grade</td>    <td>&nbsp;</td> </tr>
 
 			  <tr>	<td> <input name="N-K" id="textbox" <?php if (isset($_POST['N-K'])){echo 'checked="checked"';}?> type="checkbox" size=26>N-K</td>    <td>&nbsp;</td>
-				<td> <input name="1-5" id="textbox" <?php if (isset($_POST['1-5'])){echo 'checked="checked"';}?> type="checkbox" size=26>1-5</td>    <td>&nbsp;</td>
+				<td> <input name="K-5" id="textbox" <?php if (isset($_POST['K-5'])){echo 'checked="checked"';}?> type="checkbox" size=26>K-5</td>    <td>&nbsp;</td>
 				<td> <input name="6-8" id="textbox" <?php if (isset($_POST['6-8'])){echo 'checked="checked"';}?> type="checkbox" size=26>6-8</td>    <td>&nbsp;</td>
 				<td> <input name="9-12" id="textbox" <?php if (isset($_POST['9-1'])){echo 'checked="checked"';}?> type="checkbox" size=26>9-12</td>    <td>&nbsp;</td>
 				<td> <input name="Visitors" id="textbox" <?php if (isset($_POST['Visitors'])){echo 'checked="checked"';}?> type="checkbox" size=26>Only Visitors</td>    <td>&nbsp;</td></tr>

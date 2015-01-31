@@ -112,7 +112,7 @@ else{
   if (isset($_POST['11th_Grade'])){ $query_Sort =check_birthday_grade($query_Sort, "11th_Grade");}
   if (isset($_POST['12th_Grade'])){ $query_Sort =check_birthday_grade($query_Sort, "12th_Grade");}
   if (isset($_POST['N-K'])){ $query_Sort =check_birthday_agegroup($query_Sort, "N-K");}
-  if (isset($_POST['1-5'])){ $query_Sort =check_birthday_agegroup($query_Sort, "1-5");}
+  if (isset($_POST['K-5'])){ $query_Sort =check_birthday_agegroup($query_Sort, "K-5");}
   if (isset($_POST['6-8'])){ $query_Sort =check_birthday_agegroup($query_Sort, "6-8");}
   if (isset($_POST['9-12'])){ $query_Sort =check_birthday_agegroup($query_Sort, "9-12");}
   //remove the last "OR "
@@ -198,7 +198,7 @@ else{
 				<td> <input name="12th_Grade" id="textbox" <?php if (isset($_POST['12th_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>12th_Grade</td>    <td>&nbsp;</td> </tr>
 
 			  <tr>	<td> <input name="N-K" id="textbox" <?php if (isset($_POST['N-K'])){echo 'checked="checked"';}?> type="checkbox" size=26>N-K</td>    <td>&nbsp;</td>
-				<td> <input name="1-5" id="textbox" <?php if (isset($_POST['1-5'])){echo 'checked="checked"';}?> type="checkbox" size=26>1-5</td>    <td>&nbsp;</td>
+				<td> <input name="K-5" id="textbox" <?php if (isset($_POST['K-5'])){echo 'checked="checked"';}?> type="checkbox" size=26>K-5</td>    <td>&nbsp;</td>
 				<td> <input name="6-8" id="textbox" <?php if (isset($_POST['6-8'])){echo 'checked="checked"';}?> type="checkbox" size=26>6-8</td>    <td>&nbsp;</td>
 				<td> <input name="9-12" id="textbox" <?php if (isset($_POST['9-1'])){echo 'checked="checked"';}?> type="checkbox" size=26>9-12</td>    <td>&nbsp;</td>
 				<td>&nbsp;</td>    <td>&nbsp;</td>
