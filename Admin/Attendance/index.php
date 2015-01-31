@@ -184,6 +184,7 @@ else if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form4")) {
   if (isset($_POST['3YearOlds'])){ $string_part .= $string_base."Grade='3YearOlds' OR ";}
   if (isset($_POST['4YearOlds'])){ $string_part .= $string_base."Grade='4YearOlds' OR ";}
   if (isset($_POST['5YearOlds'])){ $string_part .= $string_base."Grade='5YearOlds' OR ";}
+  if (isset($_POST['Kindergarten'])){ $string_part .= $string_base."Grade='Kindergarten' OR ";}
   if (isset($_POST['1st_Grade'])){ $string_part .= $string_base."Grade='1st_Grade' OR ";}
   if (isset($_POST['2nd_Grade'])){ $string_part .= $string_base."Grade='2nd_Grade' OR ";}
   if (isset($_POST['3rd_Grade'])){ $string_part .= $string_base."Grade='3rd_Grade' OR ";}
