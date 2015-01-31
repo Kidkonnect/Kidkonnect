@@ -266,8 +266,8 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 	  </div> 
 		<h2 id="pageName">Welcome to Sunnybrook Admin Section</h2>
 		  <div class="feature">
-<table width="800" border="1" class="table"><tr><td>
-  <table width="800" border="0" class="table">
+<table width="900" border="1" class="table"><tr><td>
+  <table width="900" border="0" class="table">
     <tr>
       <td><a href="add.php">Add</a></td>
       <form action="<?php echo $editFormAction; ?>" METHOD="POST" name="form1">
@@ -280,8 +280,8 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
     </tr>
   </table>
 </td></tr></table>
-<table width="800" border="1" class="table"><tr><td>
-  <table width="800" border="0" class="table">
+<table width="900" border="1" class="table"><tr><td>
+  <table width="900" border="0" class="table">
     <tr>
       <form action="<?php echo $editFormAction; ?>" METHOD="POST" name="form3">
       <td nowrap="true">Display attandance from </td>
@@ -299,8 +299,8 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 </table>
 		     <form action="<?php echo $editFormAction; ?>" method="POST" name="form4">
 			<input type="hidden" name="MM_update" value="form4">
-			<table width="800" border="1" class="table"><tr><td>
-			<table width="800" class="table" border="0">
+			<table width="900" border="1" class="table"><tr><td>
+			<table width="900" class="table" border="0">
 			  <tr valign="baseline">
  				<td>Select Day</td><td>&nbsp;</td>
 				<td><select name="SelectDay" >
@@ -321,7 +321,7 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				<td> <input name="2YearOlds" id="textbox" <?php if (isset($_POST['2YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>2YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
-				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
