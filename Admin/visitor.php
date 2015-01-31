@@ -580,6 +580,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<option  class="textbox" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
@@ -637,6 +638,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<option  class="textbox" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
@@ -693,6 +695,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<option  class="textbox" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
@@ -749,6 +752,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<option  class="textbox" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
