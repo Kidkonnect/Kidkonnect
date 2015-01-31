@@ -27,8 +27,11 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   $AgeGroup = "";
   //if same lenght, then no Grade or age group was selected, remove the "AND"
   $Grade = substr($_POST['Grade'], 4, 5);  //looking to only get "Grade" from 1st_Grade
-  if ($Grade == "Grade") { //We found our 1-5 Agegroup
-    $AgeGroup = "1-5";
+  if ($Grade == "Grade") { //We found our K-5 Agegroup
+    $AgeGroup = "K-5";
+  }
+  else if (($Grade == "ergar") && (date(n)<6)) { //We found our kindergarten, check current date for being in nusery of grade school 
+    $AgeGroup = "K-5";
   }
   else { //we have a "N-K" age group
     $AgeGroup = "N-K";
@@ -166,6 +169,7 @@ Event:'.$_POST['Event'].'
 				<option  class="button" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="button" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="button" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="button" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="button" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="button" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="button" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
