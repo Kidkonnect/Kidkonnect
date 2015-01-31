@@ -200,6 +200,7 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 			  	<td> <a href="index.php?Sort=<?php echo $passedSort; ?>&EventSort=<?php echo $passedEvent; ?>&Date=<?php echo $passedDate; ?>&VolunteerLocationSort=Threes">Threes</a></td>
 			 	<td> <a href="index.php?Sort=<?php echo $passedSort; ?>&EventSort=<?php echo $passedEvent; ?>&Date=<?php echo $passedDate; ?>&VolunteerLocationSort=Fours">Fours</a></td>
 				<td> <a href="index.php?Sort=<?php echo $passedSort; ?>&EventSort=<?php echo $passedEvent; ?>&Date=<?php echo $passedDate; ?>&VolunteerLocationSort=Fives">Fives</a></td>
+				<td> <a href="index.php?Sort=<?php echo $passedSort; ?>&EventSort=<?php echo $passedEvent; ?>&Date=<?php echo $passedDate; ?>&VolunteerLocationSort=Kindergarten">Kindergarten</a></td>
 			  </tr>
 			  <tr>	
 				<td nowrap="true">&nbsp;</td>

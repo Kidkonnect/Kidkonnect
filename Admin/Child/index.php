@@ -99,6 +99,7 @@ else{
   if (isset($_POST['3YearOlds'])){ $query_Sort =check_birthday_grade($query_Sort, "3YearOlds");}
   if (isset($_POST['4YearOlds'])){ $query_Sort =check_birthday_grade($query_Sort, "4YearOlds");}
   if (isset($_POST['5YearOlds'])){ $query_Sort =check_birthday_grade($query_Sort, "5YearOlds");}
+  if (isset($_POST['Kindergarten'])){ $query_Sort =check_birthday_grade($query_Sort, "Kindergarten");}
   if (isset($_POST['1st_Grade'])){ $query_Sort =check_birthday_grade($query_Sort, "1st_Grade");}
   if (isset($_POST['2nd_Grade'])){ $query_Sort =check_birthday_grade($query_Sort, "2nd_Grade");}
   if (isset($_POST['3rd_Grade'])){ $query_Sort =check_birthday_grade($query_Sort, "3rd_Grade");}
@@ -182,6 +183,7 @@ else{
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="2nd_Grade" id="textbox" <?php if (isset($_POST['2nd_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>2nd_Grade</td>    <td>&nbsp;</td>
