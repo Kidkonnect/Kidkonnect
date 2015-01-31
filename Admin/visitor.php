@@ -602,7 +602,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<td nowrap align="right">* AgeGroup:</td>
 				<td><select name="C1AgeGroup" >
 				<option  class="textbox" value="N-K" selected>N-K&nbsp;&nbsp;&nbsp;</option>
-				<option  class="textbox" value="1-5" >1-5&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="K-5" >K-5&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="6-8" >6-8&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="9-12" >9-12&nbsp;&nbsp;&nbsp;</option>
 				</select></td>
@@ -658,7 +658,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<td nowrap align="right">* AgeGroup:</td>
 				<td><select name="C2AgeGroup" >
 				<option  class="textbox" value="N-K" selected>N-K&nbsp;&nbsp;&nbsp;</option>
-				<option  class="textbox" value="1-5" >1-5&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="K-5" >K-5&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="6-8" >6-8&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="9-12" >9-12&nbsp;&nbsp;&nbsp;</option>
 				</select></td>
@@ -714,7 +714,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<td nowrap align="right">* AgeGroup:</td>
 				<td><select name="C3AgeGroup" >
 				<option  class="textbox" value="N-K" selected>N-K&nbsp;&nbsp;&nbsp;</option>
-				<option  class="textbox" value="1-5" >1-5&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="K-5" >K-5&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="6-8" >6-8&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="9-12" >9-12&nbsp;&nbsp;&nbsp;</option>
 				</select></td>
@@ -770,7 +770,7 @@ Please Check the Admin section of http://192.168.12.158/
 				<td nowrap align="right">* AgeGroup:</td>
 				<td><select name="C4AgeGroup" >
 				<option  class="textbox" value="N-K" selected>N-K&nbsp;&nbsp;&nbsp;</option>
-				<option  class="textbox" value="1-5" >1-5&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="K-5" >K-5&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="6-8" >6-8&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="9-12" >9-12&nbsp;&nbsp;&nbsp;</option>
 				</select></td>
