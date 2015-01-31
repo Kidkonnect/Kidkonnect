@@ -154,7 +154,7 @@ else{
   <div id="content"> <!--start content -->
 		<h2 id="pageName">Welcome to Sunnybrook Admin Section</h2>
 		  <div class="feature">
-<table width="800" border="1" class="table"><tr><td>
+<table width="1050" border="1" class="table"><tr><td>
   <table width="800" border="0" class="table">
     <tr>
       <td><a href="add.php">Add</a></td>
@@ -170,7 +170,7 @@ else{
 </td></tr></table>
 		     <form action="<?php echo $editFormAction; ?>" method="POST" name="form2">
 			<input type="hidden" name="MM_update" value="form2">
-			<table width="800" border="1" class="table"><tr><td>
+			<table width="1050" border="1" class="table"><tr><td>
 			<table width="800"  class="table" border="0">
 			  <tr><td colspan="2">Set Columns to: </td>
 			      <td> <input name="ColumnSetAll" id="textbox" <?php if (isset($_POST['ColumnSetAll'])){echo 'checked="checked"';}?> type="checkbox" size=26>All</td>    <td>&nbsp;</td>
@@ -182,7 +182,7 @@ else{
 				<td> <input name="2YearOlds" id="textbox" <?php if (isset($_POST['2YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>2YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
-				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
@@ -203,8 +203,9 @@ else{
 				<td> <input name="K-5" id="textbox" <?php if (isset($_POST['K-5'])){echo 'checked="checked"';}?> type="checkbox" size=26>K-5</td>    <td>&nbsp;</td>
 				<td> <input name="6-8" id="textbox" <?php if (isset($_POST['6-8'])){echo 'checked="checked"';}?> type="checkbox" size=26>6-8</td>    <td>&nbsp;</td>
 				<td> <input name="9-12" id="textbox" <?php if (isset($_POST['9-1'])){echo 'checked="checked"';}?> type="checkbox" size=26>9-12</td>    <td>&nbsp;</td>
-				<td>&nbsp;</td>    <td>&nbsp;</td>
-				<td> <input name="AllCheckedIn" id="textbox" <?php if (isset($_POST['AllCheckedIn'])){echo 'checked="checked"';}?> type="checkbox" size=26>Checked&nbsp;In</td>    <td>&nbsp;</td>  </tr>
+				<td>&nbsp;</td>  <td>&nbsp;</td>
+				<td>&nbsp;</td>  <td>&nbsp;</td>
+				<td> <input name="AllCheckedIn" id="textbox" <?php if (isset($_POST['AllCheckedIn'])){echo 'checked="checked"';}?> type="checkbox" size=26>Checked&nbsp;In</td>    <td>&nbsp;</td> </tr>
 
 
 			</table>
@@ -243,8 +244,10 @@ else{
 				<td colspan="6"><input type="submit" name="Update" value="Update" class="button"></td>		
 			  </tr>
 			  </td></tr></table>
+			</td>
+			<td><h2>*Please highlight child's name when they come in to class. <br><br><br><br> *Please initial by name when child leaves.</h2></td></tr>
 			</table>
-			<table width="800" border="1" class="table"><tr><td>
+			<table width="1050" border="1" class="table"><tr><td>
 			<table width="800"  class="table" border="0">
 			  <td colspan="26">Filter by Last Name:</td></tr>
 			  <tr>

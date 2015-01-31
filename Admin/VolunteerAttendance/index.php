@@ -280,7 +280,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 			<form action="" method="get">
 				<table width="900" border="1" class="table">
 				<tr>
-				<?php//<td><a href="index.php?Sort=UKey&EventSort=<?php echo $passedEvent">UKey</a></td>?>
 				<td><a href="index.php?Sort=ParentID&EventSort=<?php echo $passedEvent; ?>&VolunteerLocationSort=<?php echo $passedVolunteerLocation; ?>&VolunteerTitleSort=<?php echo $passedVolunteerTitle; ?>&TimeSort=<?php echo $passedInTime; ?>">ParentID</a></td>
 				<td><a href="index.php?Sort=FirstName&EventSort=<?php echo $passedEvent; ?>&VolunteerLocationSort=<?php echo $passedVolunteerLocation; ?>&VolunteerTitleSort=<?php echo $passedVolunteerTitle; ?>&TimeSort=<?php echo $passedInTime; ?>">FirstName</a></td>
 				<td><a href="index.php?Sort=LastName&EventSort=<?php echo $passedEvent; ?>&VolunteerLocationSort=<?php echo $passedVolunteerLocation; ?>&VolunteerTitleSort=<?php echo $passedVolunteerTitle; ?>&TimeSort=<?php echo $passedInTime; ?>">LastName</a></td>
@@ -293,7 +292,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				</tr>
 			<?php while ($row_Sort = mysql_fetch_assoc($Sort)) { ?>
 				<tr>
-				<?php//<td align="left"><?php echo $row_Sort['UKey']; &nbsp;</td>?>
 				<td align="left"><a href="/Admin/Parent/edit.php?passedParentID=<?php echo $row_Sort['ParentID']; ?>"><?php echo $row_Sort['ParentID']; ?></a>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['FirstName']; ?>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['LastName']; ?>&nbsp;</td>

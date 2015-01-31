@@ -88,7 +88,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   else if ($Grade == "_Grad") { //We found our 10-12 Agegroup 
     $AgeGroup = "9-12";
   }
-  else if (($Grade == "ergar") && (date(n)>6)) { //We found our kindergarten, check current date for being in nusery of grade school 
+  else if (($Grade == "ergar") && (date(n)<6)) { //We found our kindergarten, check current date for being in nusery of grade school 
     $AgeGroup = "K-5";
   }
   else { //we have a "N-K" age group

@@ -20,7 +20,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   $AgeGroup = "";
   //if same lenght, then no Grade or age group was selected, remove the "AND"
   $Grade = substr($_POST['Grade'], 4, 5);  //looking to only get "Grade" from 1st_Grade
-  echo $Grade;
+  //echo $Grade;
   if ($Grade == "Grade") { //We found our 1-9 Agegroup
     $Number = substr($_POST['Grade'], 0, 1);//looking to only get "1" from 1st_Grade
     if ($Number == "1"){$AgeGroup = "K-5";}

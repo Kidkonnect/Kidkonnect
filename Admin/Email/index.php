@@ -124,7 +124,7 @@ $totalRows_computerdata = mysql_num_rows($computerdata);
 				<td> <input name="2YearOlds" id="textbox" <?php if (isset($_POST['2YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>2YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
-				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
