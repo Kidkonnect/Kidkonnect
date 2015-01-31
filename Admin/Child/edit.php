@@ -23,11 +23,11 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   //echo $Grade;
   if ($Grade == "Grade") { //We found our 1-9 Agegroup
     $Number = substr($_POST['Grade'], 0, 1);//looking to only get "1" from 1st_Grade
-    if ($Number == "1"){$AgeGroup = "1-5";}
-    else if ($Number == "2"){$AgeGroup = "1-5";}
-    else if ($Number == "3"){$AgeGroup = "1-5";}
-    else if ($Number == "4"){$AgeGroup = "1-5";}
-    else if ($Number == "5"){$AgeGroup = "1-5";}
+    if ($Number == "1"){$AgeGroup = "K-5";}
+    else if ($Number == "2"){$AgeGroup = "K-5";}
+    else if ($Number == "3"){$AgeGroup = "K-5";}
+    else if ($Number == "4"){$AgeGroup = "K-5";}
+    else if ($Number == "5"){$AgeGroup = "K-5";}
     else if ($Number == "6"){$AgeGroup = "6-8";}
     else if ($Number == "7"){$AgeGroup = "6-8";}
     else if ($Number == "8"){$AgeGroup = "6-8";}
@@ -35,6 +35,9 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   }
   else if ($Grade == "_Grad") { //We found our 10-12 Agegroup 
     $AgeGroup = "9-12";
+  }
+  else if (($Grade == "ergar") && (date(n)>6)) { //We found our kindergarten, check current date for being in nusery of grade school 
+    $AgeGroup = "K-5";
   }
   else { //we have a "N-K" age group
     $AgeGroup = "N-K";
@@ -281,6 +284,7 @@ if ((isset($_GET["passedCopy"])) && ($_GET["passedCopy"] == "Yes")) {
 				<option  class="textbox" value="3YearOlds" <?php if ($row_Sort['Grade'] == '3YearOlds'){ echo 'selected';} ?>>3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" <?php if ($row_Sort['Grade'] == '4YearOlds'){ echo 'selected';} ?>>4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" <?php if ($row_Sort['Grade'] == '5YearOlds'){ echo 'selected';} ?>>5YearOlds&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" <?php if ($row_Sort['Grade'] == 'Kindergarten'){ echo 'selected';} ?>>Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" <?php if ($row_Sort['Grade'] == '1st_Grade'){ echo 'selected';} ?>>1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" <?php if ($row_Sort['Grade'] == '2nd_Grade'){ echo 'selected';} ?>>2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" <?php if ($row_Sort['Grade'] == '3rd_Grade'){ echo 'selected';} ?>>3rd_Grade&nbsp;&nbsp;&nbsp;</option>

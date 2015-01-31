@@ -53,7 +53,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   if (isset($_POST['11th_Grade'])){ $query_Sort .="Grade='11th_Grade' OR ";}
   if (isset($_POST['12th_Grade'])){ $query_Sort .="Grade='12th_Grade' OR ";}
   if (isset($_POST['N-K'])){ $query_Sort .="AgeGroup='N-K' OR ";}
-  if (isset($_POST['1-5'])){ $query_Sort .="AgeGroup='1-5' OR ";}
+  if (isset($_POST['K-5'])){ $query_Sort .="AgeGroup='K-5' OR ";}
   if (isset($_POST['6-8'])){ $query_Sort .="AgeGroup='6-8' OR ";}
   if (isset($_POST['9-12'])){ $query_Sort .="AgeGroup='9-12' OR ";}
   //remove the last "OR "
@@ -140,7 +140,7 @@ $totalRows_computerdata = mysql_num_rows($computerdata);
 				<td> <input name="12th_Grade" id="textbox" <?php if (isset($_POST['12th_Grade'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>12th_Grade</td>    <td>&nbsp;</td> </tr>
 
 			  <tr>	<td> <input name="N-K" id="textbox" <?php if (isset($_POST['N-K'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>N-K</td>    <td>&nbsp;</td>
-				<td> <input name="1-5" id="textbox" <?php if (isset($_POST['1-5'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>1-5</td>    <td>&nbsp;</td>
+				<td> <input name="K-5" id="textbox" <?php if (isset($_POST['K-5'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>K-5</td>    <td>&nbsp;</td>
 				<td> <input name="6-8" id="textbox" <?php if (isset($_POST['6-8'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>6-8</td>    <td>&nbsp;</td>
 				<td> <input name="9-12" id="textbox" <?php if (isset($_POST['9-12'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>9-12</td>    <td>&nbsp;</td>  </tr>
 
@@ -187,7 +187,7 @@ $totalRows_computerdata = mysql_num_rows($computerdata);
 				if (isset($_POST['11th_Grade'])){ $emails_printed .="11th_Grade; ";}
 				if (isset($_POST['12th_Grade'])){ $emails_printed .="12th_Grade; ";}
 				if (isset($_POST['N-K'])){ $emails_printed .="N-K; ";}
-				if (isset($_POST['1-5'])){ $emails_printed .="1-5; ";}
+				if (isset($_POST['K-5'])){ $emails_printed .="K-5; ";}
 				if (isset($_POST['6-8'])){ $emails_printed .="6-8; ";}
 				if (isset($_POST['9-12'])){ $emails_printed .="9-12; ";}
 				echo $emails_printed. "<p>";
