@@ -40,6 +40,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
   if (isset($_POST['3YearOlds'])){ $query_Sort .="Grade='3YearOlds' OR ";}
   if (isset($_POST['4YearOlds'])){ $query_Sort .="Grade='4YearOlds' OR ";}
   if (isset($_POST['5YearOlds'])){ $query_Sort .="Grade='5YearOlds' OR ";}
+  if (isset($_POST['Kindergarten'])){ $query_Sort .="Grade='Kindergarten' OR ";}
   if (isset($_POST['1st_Grade'])){ $query_Sort .="Grade='1st_Grade' OR ";}
   if (isset($_POST['2nd_Grade'])){ $query_Sort .="Grade='2nd_Grade' OR ";}
   if (isset($_POST['3rd_Grade'])){ $query_Sort .="Grade='3rd_Grade' OR ";}
@@ -123,7 +124,8 @@ $totalRows_computerdata = mysql_num_rows($computerdata);
 				<td> <input name="2YearOlds" id="textbox" <?php if (isset($_POST['2YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>2YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
-				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td>
+				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="2nd_Grade" id="textbox" <?php if (isset($_POST['2nd_Grade'])){echo 'checked="checked"';}?> value="" type="checkbox" size=26>2nd_Grade</td>    <td>&nbsp;</td>
@@ -174,6 +176,7 @@ $totalRows_computerdata = mysql_num_rows($computerdata);
 				if (isset($_POST['3YearOlds'])){ $emails_printed .="3YearOlds; ";}
 				if (isset($_POST['4YearOlds'])){ $emails_printed .="4YearOlds; ";}
 				if (isset($_POST['5YearOlds'])){ $emails_printed .="5YearOlds; ";}
+				if (isset($_POST['Kindergarten'])){ $emails_printed .="Kindergarten; ";}
 				if (isset($_POST['1st_Grade'])){ $emails_printed .="1st_Grade; ";}
 				if (isset($_POST['2nd_Grade'])){ $emails_printed .="2nd_Grade; ";}
 				if (isset($_POST['3rd_Grade'])){ $emails_printed .="3rd_Grade; ";}

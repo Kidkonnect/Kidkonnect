@@ -39,7 +39,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				<td>Grade</td>
 				<td>AgeGroup</td>
 				<td>Birthday</td>
-				<?php//<td>DateEntered&GradeSort=<?php echo $passedGrade">DateEntered</td>?>       
 				<td>Status</td>
 				<td>StatusChange</td>
 				<td>Allergies</td>
@@ -64,7 +63,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				<td align="left" nowrap="true"><?php echo $row_Sort['Grade']; ?>&nbsp;</td>
 				<td align="left" nowrap="true"><?php echo $row_Sort['AgeGroup']; ?>&nbsp;</td>
 				<td align="left" nowrap="true"><?php echo $row_Sort['Birthday']; ?>&nbsp;</td>
-				<?php//<td align="left" nowrap="true"><?php echo $row_Sort['DateEntered']; &nbsp;</td>?>
 				<td align="left" nowrap="true"><a href="/childinfo.php?passedChildID=<?php echo $row_Sort['ChildID']; ?>"><?php echo $row_Sort['Status']; ?></a>&nbsp;</td>
 				<td align="left" nowrap="true"><?php echo $row_Sort['StatusChange']; ?>&nbsp;</td>
 				<td align="left" width="75"><?php echo $row_Sort['Allergies']; ?>&nbsp;</td>

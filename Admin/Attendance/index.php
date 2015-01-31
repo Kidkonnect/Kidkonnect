@@ -184,6 +184,7 @@ else if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form4")) {
   if (isset($_POST['3YearOlds'])){ $string_part .= $string_base."Grade='3YearOlds' OR ";}
   if (isset($_POST['4YearOlds'])){ $string_part .= $string_base."Grade='4YearOlds' OR ";}
   if (isset($_POST['5YearOlds'])){ $string_part .= $string_base."Grade='5YearOlds' OR ";}
+  if (isset($_POST['Kindergarten'])){ $string_part .= $string_base."Grade='Kindergarten' OR ";}
   if (isset($_POST['1st_Grade'])){ $string_part .= $string_base."Grade='1st_Grade' OR ";}
   if (isset($_POST['2nd_Grade'])){ $string_part .= $string_base."Grade='2nd_Grade' OR ";}
   if (isset($_POST['3rd_Grade'])){ $string_part .= $string_base."Grade='3rd_Grade' OR ";}
@@ -321,6 +322,7 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				<td> <input name="3YearOlds" id="textbox" <?php if (isset($_POST['3YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>3YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="4YearOlds" id="textbox" <?php if (isset($_POST['4YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>4YearOlds</td>    <td>&nbsp;</td>
 				<td> <input name="5YearOlds" id="textbox" <?php if (isset($_POST['5YearOlds'])){echo 'checked="checked"';}?> type="checkbox" size=26>5YearOlds</td>    <td>&nbsp;</td> </tr>
+				<td> <input name="Kindergarten" id="textbox" <?php if (isset($_POST['Kindergarten'])){echo 'checked="checked"';}?> type="checkbox" size=26>Kindergarten</td>    <td>&nbsp;</td> </tr>
 			  
 			  <tr>	<td> <input name="1st_Grade" id="textbox" <?php if (isset($_POST['1st_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>1st_Grade</td>    <td>&nbsp;</td>
 				<td> <input name="2nd_Grade" id="textbox" <?php if (isset($_POST['2nd_Grade'])){echo 'checked="checked"';}?> type="checkbox" size=26>2nd_Grade</td>    <td>&nbsp;</td>
@@ -495,7 +497,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 			<form action="" method="get">
 				<table width="900" border="1" class="table">
 				<tr>
-				<?php//<td><a href="index.php?Sort=UKey&EventSort=<?php echo $passedEvent">UKey</a></td>?>
 				<td>ChildID</td>
 				<td>FirstName</td>
 				<td>LastName</td>
@@ -509,7 +510,6 @@ $Sort = mysql_query($query_Sort, $dbs) or die(mysql_error());
 				</tr>
 			<?php while ($row_Sort = mysql_fetch_assoc($Sort)) { ?>
 				<tr>
-				<?php//<td align="left"><?php echo $row_Sort['UKey']; &nbsp;</td>?>
 				<td align="left"><a href="/Admin/Child/edit.php?passedChildID=<?php echo $row_Sort['ChildID']; ?>"><?php echo $row_Sort['ChildID']; ?></a>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['FirstName']; ?>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['LastName']; ?>&nbsp;</td>

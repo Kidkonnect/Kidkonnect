@@ -169,7 +169,7 @@ $Sort_LastName = mysql_query($query_Sort_LastName, $dbs) or die(mysql_error());
 		     
 		<?php  //END if(($passedMonth != "")|($passedYear != ""))
 		      if(1){
-		      //if((isset($_POST["MM_search"])) && ($_POST["MM_search"] == "form3")){ ?>
+		      ?>
 			<form action="" method="get">
 				<table width="300" border="1" class="table">
 				<tr align="center">
@@ -269,7 +269,6 @@ $Sort_LastName = mysql_query($query_Sort_LastName, $dbs) or die(mysql_error());
 			<form action="" method="get">
 				<table width="900" border="1" class="table">
 				<tr>
-				<?php//<td><a href="index.php?Sort=UKey&EventSort=<?php echo $passedEvent">UKey</a></td>?>
 				<td>ChildID</td>
 				<td>FirstName</td>
 				<td>LastName</td>
@@ -283,7 +282,6 @@ $Sort_LastName = mysql_query($query_Sort_LastName, $dbs) or die(mysql_error());
 				</tr>
 			<?php while ($row_Sort = mysql_fetch_assoc($Sort)) { ?>
 				<tr>
-				<?php//<td align="left"><?php echo $row_Sort['UKey']; &nbsp;</td>?>
 				<td align="left"><a href="/Admin/Child/edit.php?passedChildID=<?php echo $row_Sort['ChildID']; ?>"><?php echo $row_Sort['ChildID']; ?></a>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['FirstName']; ?>&nbsp;</td>
 				<td align="left"><?php echo $row_Sort['LastName']; ?>&nbsp;</td>

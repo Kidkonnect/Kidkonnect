@@ -88,7 +88,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   else if ($Grade == "_Grad") { //We found our 10-12 Agegroup 
     $AgeGroup = "9-12";
   }
-  else if (($Grade == "ergar") && (date(n)>6)) { //We found our kindergarten, check current date for being in nusery of grade school 
+  else if (($Grade == "ergar") && (date(n)<6)) { //We found our kindergarten, check current date for being in nusery of grade school 
     $AgeGroup = "K-5";
   }
   else { //we have a "N-K" age group
@@ -259,7 +259,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 				<option  class="textbox" value="3YearOlds" >3YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="4YearOlds" >4YearOlds&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="5YearOlds" >5YearOlds&nbsp;&nbsp;&nbsp;</option>
-				<option  class="textbox" value="5YearOlds" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
+				<option  class="textbox" value="Kindergarten" >Kindergarten&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="1st_Grade" >1st_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="2nd_Grade" >2nd_Grade&nbsp;&nbsp;&nbsp;</option>
 				<option  class="textbox" value="3rd_Grade" >3rd_Grade&nbsp;&nbsp;&nbsp;</option>
