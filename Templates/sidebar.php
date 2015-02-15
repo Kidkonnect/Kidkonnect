@@ -3,6 +3,7 @@
 <br><a href="/index.php">&nbsp;&nbsp;Child</a>
 <p><a href="/index.php">&nbsp;&nbsp;Volunteer</a>
 <p><a href="/tempbadge.php">&nbsp;&nbsp;Visitor</a>
+<p><a href="/self.php">&nbsp;&nbsp;Self</a>
 <p><b>Check&nbsp;Out:</b>
 <br><a href="/checkout.php">&nbsp;&nbsp;Child</a>
 <p><b>Other:</b>
