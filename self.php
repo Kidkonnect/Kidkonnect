@@ -12,10 +12,11 @@
 <?php
 $editFormAction = $_SERVER['PHP_SELF'];
 $newstatus = "x";
+$row_Sort2 = "";
 //select the database 
   //echo 'the start';
   //echo $_POST["passedChildID"];
-  echo $_POST["MM_update"];
+  //echo $_POST["MM_update"];
 
 if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
  //code to print tags
@@ -25,7 +26,9 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 	$totalRows2 = mysql_num_rows($Sort2);
 	$row_Sort2 = mysql_fetch_assoc($Sort2);
 	
-  echo $row_Sort2['FirstName'];
+  //echo $row_Sort2['FirstName'];
+  //echo $row_Sort2['SelfChildID1'];
+  //echo $row_Sort2['ChildID1'];
 }
 ?>
 </head>
@@ -50,7 +53,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 		  </div>
 		  <!--end feature -->
 	<SCRIPT language="JavaScript">
-		document.form1.passedChildID.focus();
+		document.form1.passedNFCID.focus();
 	</SCRIPT> 
   </div> 
   <!--end content -->
