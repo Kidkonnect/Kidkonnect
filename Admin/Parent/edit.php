@@ -23,7 +23,26 @@ if (!isset($passedFilter)) {
   $passedFilter = "A";
 }
 if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
-  $updateSQL = sprintf("UPDATE parent SET FirstName=%s, LastName=%s, Address=%s, City=%s, HomePhone=%s, CellPhone1=%s, Email=%s, VolunteerLocation=%s, VolunteerTitle=%s, ChildID1=%s, ChildID2=%s, ChildID3=%s, ChildID4=%s, ChildID5=%s, ChildID6=%s, ChildID7=%s, ChildID8=%s, ChildID9=%s, ChildID10=%s WHERE ParentID=%s",
+$tempSelfChildID1 = "";
+$tempSelfChildID2 = "";
+$tempSelfChildID3 = "";
+$tempSelfChildID4 = "";
+
+if (isset($_POST["SelfChildID1"])){
+  $tempSelfChildID1 = "yes";
+}
+if (isset($_POST["SelfChildID2"])){
+  $tempSelfChildID2 = "yes";
+}
+if (isset($_POST["SelfChildID3"])){
+  $tempSelfChildID3 = "yes";
+}
+if (isset($_POST["SelfChildID4"])){
+  $tempSelfChildID4 = "yes";
+}
+
+
+  $updateSQL = sprintf("UPDATE parent SET FirstName=%s, LastName=%s, Address=%s, City=%s, HomePhone=%s, CellPhone1=%s, Email=%s, VolunteerLocation=%s, VolunteerTitle=%s, NFCID=%s, SelfChildID1=%s, SelfChildID2=%s, SelfChildID3=%s, SelfChildID4=%s, ChildID1=%s, ChildID2=%s, ChildID3=%s, ChildID4=%s, ChildID5=%s, ChildID6=%s, ChildID7=%s, ChildID8=%s, ChildID9=%s, ChildID10=%s WHERE ParentID=%s",
                        GetSQLValueString($_POST['FirstName'], "text"),
                        GetSQLValueString($_POST['LastName'], "text"),
                        GetSQLValueString($_POST['Address'], "text"),
@@ -33,6 +52,11 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        GetSQLValueString($_POST['Email'], "text"),
                        GetSQLValueString($_POST['VolunteerLocation'], "text"),
                        GetSQLValueString($_POST['VolunteerTitle'], "text"),
+		       GetSQLValueString($_POST['NFCID'], "text"),
+		       GetSQLValueString($tempSelfChildID1, "text"),
+		       GetSQLValueString($tempSelfChildID2, "text"),
+		       GetSQLValueString($tempSelfChildID3, "text"),
+		       GetSQLValueString($tempSelfChildID4, "text"),
 		       GetSQLValueString($_POST['ChildID1'], "text"),
 		       GetSQLValueString($_POST['ChildID2'], "text"),
 		       GetSQLValueString($_POST['ChildID3'], "text"),
@@ -158,26 +182,37 @@ $row_Sort = mysql_fetch_assoc($Sort);
 			  <tr valign="baseline">
 				<td nowrap align="right">VolunteerLocation:</td>
 				<td><input type="text" class="textbox" name="VolunteerLocation" value="<?php echo  $row_Sort['VolunteerLocation']; ?>" size="32"></td>
-			  </tr>
+			>  </tr>
 			  <tr valign="baseline">
 				<td nowrap align="right">VolunteerTitle:</td>
 				<td><input type="text" class="textbox" name="VolunteerTitle" value="<?php echo  $row_Sort['VolunteerTitle']; ?>" size="32"></td>
 			  </tr>
 			  <tr valign="baseline">
+				<td nowrap align="right">NFCID:</td>
+				<td><input type="text" class="textbox" name="NFCID" value="<?php echo  $row_Sort['NFCID']; ?>" size="32"></td>
+				<td>Self&nbsp;Check&nbsp;in</td>    <td>&nbsp;</td>
+
+			  </tr>
+			   <tr valign="baseline">
 				<td nowrap align="right">ChildID1:</td>
 				<td><input type="text" class="textbox" name="ChildID1" value="<?php echo  $row_Sort['ChildID1']; ?>" size="32"></td>
+				<td> <input name="SelfChildID1" id="textbox" <?php if ($row_Sort['SelfChildID1']=="yes"){echo 'checked="checked"';}?> type="checkbox" size=26></td>    <td>&nbsp;</td>
+
 			  </tr>
 			  <tr valign="baseline">
 				<td nowrap align="right">ChildID2:</td>
 				<td><input type="text" class="textbox" name="ChildID2" value="<?php echo  $row_Sort['ChildID2']; ?>" size="32"></td>
+				<td> <input name="SelfChildID2" id="textbox" <?php if ($row_Sort['SelfChildID2']=="yes"){echo 'checked="checked"';}?> type="checkbox" size=26></td>    <td>&nbsp;</td>
 			  </tr>
 			  <tr valign="baseline">
 				<td nowrap align="right">ChildID3:</td>
 				<td><input type="text" class="textbox" name="ChildID3" value="<?php echo  $row_Sort['ChildID3']; ?>" size="32"></td>
+				<td> <input name="SelfChildID3" id="textbox" <?php if ($row_Sort['SelfChildID3']=="yes"){echo 'checked="checked"';}?> type="checkbox" size=26></td>    <td>&nbsp;</td>
 			  </tr>
 			  <tr valign="baseline">
 				<td nowrap align="right">ChildID4:</td>
 				<td><input type="text" class="textbox" name="ChildID4" value="<?php echo  $row_Sort['ChildID4']; ?>" size="32"></td>
+				<td> <input name="SelfChildID4" id="textbox" <?php if ($row_Sort['SelfChildID4']=="yes"){echo 'checked="checked"';}?> type="checkbox" size=26></td>    <td>&nbsp;</td>
 			  </tr>
 			  <tr valign="baseline">
 				<td nowrap align="right">ChildID5:</td>
