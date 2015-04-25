@@ -44,7 +44,7 @@ else {
 		     <form action="" method="get">
 			<table border="0" class="table">
 			 <tr>
-			  <td><!--Picture --> <?php echo '<img width="300" src = "/ParentPictures/', $row_Sort['ParentID'], '.jpg">';?></td>
+			  <td><!--Picture --> <?php echo '<img width="300" height="220" src = "/ParentPictures/', $row_Sort['ParentID'], '.jpg">';?></td>
 			  <td ><!--Status --> <?php include ('/var/www/parentinfostatus.php'); ?></td> 
 			 </tr>
 			 <tr>

@@ -87,12 +87,12 @@ else {
 			    //print one child and check rows again
 			    $totalRowsC--; //subtract one from totalrows 
 			    $row_SortC = mysql_fetch_assoc($SortC);?> 
-			    <td width="100" align="left"><?php echo '<a href="/childinfo.php?passedChildID=', $row_SortC['ChildID'], '"><img height="125" src = "/ChildPictures/', $row_SortC['ChildID'], '.jpg"><br>',$row_SortC['FirstName'],'&nbsp;',$row_SortC['LastName'], '</a>';?></a></td>
+			    <td width="100" align="left"><?php echo '<a href="/childinfo.php?passedChildID=', $row_SortC['ChildID'], '"><img width="150" height="110" src = "/ChildPictures/', $row_SortC['ChildID'], '.jpg"><br>',$row_SortC['FirstName'],'&nbsp;',$row_SortC['LastName'], '</a>';?></a></td>
 			    <?php if ($totalRowsC > 0) {
 			    //print one child and check rows again
 			    $totalRowsC--; //subtract one from totalrows 
 			    $row_SortC = mysql_fetch_assoc($SortC);?> 
-			    <td width="100" align="left"><?php echo '<a href="/childinfo.php?passedChildID=', $row_SortC['ChildID'], '"><img height="125" src = "/ChildPictures/', $row_SortC['ChildID'], '.jpg"><br>',$row_SortC['FirstName'],'&nbsp;',$row_SortC['LastName'], '</a>';?></a></td>
+			    <td width="100" align="left"><?php echo '<a href="/childinfo.php?passedChildID=', $row_SortC['ChildID'], '"><img width="150" height="110" src = "/ChildPictures/', $row_SortC['ChildID'], '.jpg"><br>',$row_SortC['FirstName'],'&nbsp;',$row_SortC['LastName'], '</a>';?></a></td>
 			    <?php } else {echo '<td width="50">&nbsp;</td>';} } ?> 
 
 			  <?php if ($totalRowsP < 1) { ?> 
@@ -102,12 +102,12 @@ else {
 			    //print one child and check rows again
 			    $totalRowsP--; //subtract one from totalrows 
 			    $row_SortP = mysql_fetch_assoc($SortP);?> 
-			    <td width="100" align="left"><?php echo '<a href="/parentinfo.php?passedParentID=', $row_SortP['ParentID'], '"><img height="125" src = "/ParentPictures/', $row_SortP['ParentID'], '.jpg"><br>', $row_SortP['FirstName'],'&nbsp;',$row_SortP['LastName'], '</a>';?></a></td>
+			    <td width="100" align="left"><?php echo '<a href="/parentinfo.php?passedParentID=', $row_SortP['ParentID'], '"><img width="150" height="110" src = "/ParentPictures/', $row_SortP['ParentID'], '.jpg"><br>', $row_SortP['FirstName'],'&nbsp;',$row_SortP['LastName'], '</a>';?></a></td>
 			    <?php if ($totalRowsP > 0) {
 			    //print one child and check rows again
 			    $totalRowsP--; //subtract one from totalrows 
 			    $row_SortP = mysql_fetch_assoc($SortP);?> 
-			    <td width="100" align="left"><?php echo '<a href="/parentinfo.php?passedParentID=', $row_SortP['ParentID'], '"><img height="125" src = "/ParentPictures/', $row_SortP['ParentID'], '.jpg"><br>', $row_SortP['FirstName'],'&nbsp;',$row_SortP['LastName'], '</a>';?></a></td>
+			    <td width="100" align="left"><?php echo '<a href="/parentinfo.php?passedParentID=', $row_SortP['ParentID'], '"><img width="150" height="110" src = "/ParentPictures/', $row_SortP['ParentID'], '.jpg"><br>', $row_SortP['FirstName'],'&nbsp;',$row_SortP['LastName'], '</a>';?></a></td>
 			    <?php } else {echo '<td width="50">&nbsp;</td>';} } ?> 
 
 			</tr>

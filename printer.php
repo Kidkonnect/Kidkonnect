@@ -48,15 +48,15 @@ else{
 <?php $randomchars = rand_str();  ?>
     <table width="480" height="240" border="0" class="table" >
       <tr>
-        <td colspan="2" align="left"><?php echo '<img width="120" src="/ChildPictures/', $row_Sort['ChildID'], '.jpg">';?></td>
+        <td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ChildPictures/', $row_Sort['ChildID'], '.jpg">';?></td>
         <td colspan="3" align="center"><h1><?php echo $row_Sort['FirstName'];?> <?php echo $row_Sort['LastName'];?> </h1><h2><?php echo $row_Sort['Birthday'];?> <?php echo $newgrade;?></h2></td>
         <td colspan="3" align="center"><?php echo '<IMG SRC="barcode.php?barcode=',$row_Sort['ChildID'], '&text=0">';?><h1><?php echo $row_Sort['ChildID'];?></h1></td>
       </tr>
       <tr>
-	<?php if($row_Sort['ParentID1']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$row_Sort['ParentID1'],'.jpg"></td>';} ?>
-	<?php if($row_Sort['ParentID2']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$row_Sort['ParentID2'],'.jpg"></td>';} ?>
-	<?php if($row_Sort['ParentID3']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$row_Sort['ParentID3'],'.jpg"></td>';} ?>
-	<?php if($row_Sort['ParentID4']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$row_Sort['ParentID4'],'.jpg"></td>';} ?>
+	<?php if($row_Sort['ParentID1']!=''){echo '<td colspan="2"><img width="115" height="90" src="/ParentPictures/',$row_Sort['ParentID1'],'.jpg"></td>';} ?>
+	<?php if($row_Sort['ParentID2']!=''){echo '<td colspan="2"><img width="115" height="90" src="/ParentPictures/',$row_Sort['ParentID2'],'.jpg"></td>';} ?>
+	<?php if($row_Sort['ParentID3']!=''){echo '<td colspan="2"><img width="115" height="90" src="/ParentPictures/',$row_Sort['ParentID3'],'.jpg"></td>';} ?>
+	<?php if($row_Sort['ParentID4']!=''){echo '<td colspan="2"><img width="115" height="90" src="/ParentPictures/',$row_Sort['ParentID4'],'.jpg"></td>';} ?>
       </tr>
       <tr>
 	<?php if($row_Sort['ParentID1']!=''){getparentnames($row_Sort['ParentID1'], $database_dbs, $dbs);} ?>
