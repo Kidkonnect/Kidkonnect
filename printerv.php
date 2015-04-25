@@ -19,7 +19,7 @@
 ?>
    <table width="480" height="240"  border="0" class="table" >
       <tr>
-        <td colspan="2" align="left"><?php echo '<img width="200" src="/ParentPictures/', $row_Sort['ParentID'], '.jpg">';?></td>
+        <td colspan="2" align="left"><?php echo '<img width="200" height="130" src="/ParentPictures/', $row_Sort['ParentID'], '.jpg">';?></td>
 	<td>
 	<table>
           <tr>

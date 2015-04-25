@@ -26,12 +26,12 @@ else{
 <?php //$randomchars = rand_str();  ?>
     <table width="480" height="240" border="0" class="table" >
       <tr>
-        <td colspan="2" align="left"><?php echo '<img width="120" src="/ChildPictures/0.jpg">';?></td>
+        <td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ChildPictures/0.jpg">';?></td>
         <td colspan="3" align="center"><h1><?php echo $_POST['FirstName'];?> <?php echo $_POST['LastName'];?> </h1><h2><?php echo $_POST['Birthday'];?> <?php echo $newgrade;?></h2></td>
         <td colspan="3" align="center"><?php echo '<IMG SRC="barcode.php?barcode=',$tempID, '&text=0">';?><h1><?php echo $tempID;?></h1></td>
       </tr>
       <tr>
-	<td colspan="2" align="left"><?php echo '<img width="120" src="/ChildPictures/0.jpg">';?></td>
+	<td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ChildPictures/0.jpg">';?></td>
 	<?php echo '<td colspan="6" align="center"><h1>Date: '.date('m/d/Y').'</h1></td>'; ?>
 	<?php //if($_POST['ParentID3']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$_POST['ParentID3'],'.jpg"></td>';} ?>
 	<?php //if($_POST['ParentID4']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$_POST['ParentID4'],'.jpg"></td>';} ?>
@@ -51,12 +51,12 @@ else{
   </table>
     <table width="480" height="240" border="0" class="table" >
       <tr>
-        <td colspan="2" align="left"><?php echo '<img width="120" src="/ChildPictures/0.jpg">';?></td>
+        <td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ChildPictures/0.jpg">';?></td>
         <td colspan="3" align="center"><h1><?php echo $_POST['FirstName'];?> <?php echo $_POST['LastName'];?> </h1><h2><?php echo $_POST['Birthday'];?> <?php echo $newgrade;?></h2></td>
         <td colspan="3" align="center"><?php echo '<IMG SRC="barcode.php?barcode=',$tempID, '&text=0">';?><h1><?php echo $tempID;?></h1></td>
       </tr>
       <tr>
-	<td colspan="2" align="left"><?php echo '<img width="120" src="/ChildPictures/0.jpg">';?></td>
+	<td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ChildPictures/0.jpg">';?></td>
 	<?php echo '<td colspan="6" align="center"><h1>Date: '.date('m/d/Y').'</h1></td>'; ?>
 	<?php //if($_POST['ParentID3']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$_POST['ParentID3'],'.jpg"></td>';} ?>
 	<?php //if($_POST['ParentID4']!=''){echo '<td colspan="2"><img width="120" src="/ParentPictures/',$_POST['ParentID4'],'.jpg"></td>';} ?>

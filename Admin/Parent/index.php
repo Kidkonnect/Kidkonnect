@@ -21,7 +21,7 @@ if (!isset($passedFilter)) {
 }
 mysql_select_db($database_dbs, $dbs);
 //SELECT * FROM foo WHERE b = 'abc' ORDER BY number ASC;
-if ((isset($_POST["MM_search"])) && ($_POST["MM_search"] == "form1")) {
+if ((isset($_POST["MM_search"])) && ($_POST["MM_search"] == "form1") && ($_POST['Search']!="")) {
   $string = $_POST['Search'];
   $column = $_POST['Column'];
   $query_Sort = "SELECT * FROM parent WHERE LastName LIKE '%$string%' OR FirstName LIKE '%$string%' OR ParentID='$string' ORDER BY $passedSort ASC"; 
