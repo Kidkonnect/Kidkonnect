@@ -2,7 +2,7 @@
       <tr>
         <td colspan="2" align="left"><?php echo '<img width="115" height="90" src="/ParentPictures/', $row_Sort['ParentID'], '.jpg">';?></td>
         <td colspan="3" align="left"><h1><?php echo $row_Sort['LastName'];?></h1></td>
-        <td colspan="3" align="left"><img src="/Templates/corner.png" width="120"></td>
+        <td colspan="3" align="left"><img src="/Templates/corner.png" width="120"  hight="105"></td>
       </tr>
       <tr>
 	<?php if($row_Sort['ChildID1']!=''){echo '<td colspan="2"><img width="115" height="90" src="/ChildPictures/',$row_Sort['ChildID1'],'.jpg"></td>';}else {echo '&nbsp;';} ?>

@@ -132,7 +132,8 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 				<td colspan="2" nowrap align="center"><?php echo $row_Sort['FirstName']; ?> Was Checked In...</td>
 			  </tr>
 			    
-			<?php } } } // first "}" is end If totalRows2 || 2nd  "}" is end of if isset || 3rd is While loop
+			<?php } } } 
+			     // first is end If totalRows2 || 2nd  is end of if isset || 3rd is While loop
 			     //send email to Ryan with prayers included.
 			     //$to      = 'mikehenson@hotmail.com, patti@sunnybrookcc.org';
 			     $to      = 'mikehenson@hotmail.com';
@@ -149,7 +150,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 			
 			?>			    
 			  <tr valign="baseline">
-				<td colspan="2" align="center"><?php if ($CheckInFlag) { echo '--CHECK IN WAS A SUCCESS!--';} else { echo 'On one was Checked in, this maybe they are already checked in OR no one was selected to be checked in.';}?></td>
+				<td colspan="2" align="center"><?php if ($CheckInFlag) { echo '--CHECK IN WAS A SUCCESS!--';} else { echo 'No one was Checked in, this maybe they are already checked in OR no one was selected to be checked in.';}?></td>
 			  </tr>
 			  <tr valign="baseline">
 				<td><input type="submit" name="Status" value="GO BACK"  class="button"></td>
@@ -169,11 +170,25 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 				<tr>
 				  <td nowrap align="left">Picture</td><td nowrap align="left">Name/ID</td><td nowrap align="left">Prayers/Notes</td>
 				</tr>
-			    <?php while ($row_Sort = mysql_fetch_assoc($Sort)) { ?>
+				
+			    <?php 
+					mysql_data_seek($row_Sort, 0);
+
+					while ($row_Sort = mysql_fetch_assoc($Sort)) { ?>
 				<tr>
-				  <td align="left"><img height="100" src="/ChildPictures/<?php echo $row_Sort['ChildID']; ?>.jpg" ></a></td>
+					<?php
+					  
+						$query_smallgroup = "SELECT * FROM smallgroup WHERE ChildID = '".$row_Sort['ChildID']."' AND YearMonthDay = '".date('Ymd')."' ORDER BY LastName ASC"; 
+			      //echo $query_smallgroup;
+			      $smallgroup = mysql_query($query_smallgroup, $dbs) or die(mysql_error());
+						$row_smallgroup = mysql_fetch_assoc($smallgroup);
+						//echo $row_smallgroup['ChildID'];
+			      $totalsmallgroup = mysql_num_rows($smallgroup);
+						//echo $totalsmallgroup;
+					?>
+					<td align="left"><img height="100" src="/ChildPictures/<?php echo $row_Sort['ChildID']; ?>.jpg" ></a></td>
 				  <td><?php echo $row_Sort['ChildID']; ?>&nbsp;<br><?php echo $row_Sort['FirstName']; ?>&nbsp;<br><?php echo $row_Sort['LastName']; ?>&nbsp;<br>
-				    <input name="<?php echo $row_Sort['ChildID']; ?>" id="textbox" <?php if (isset($_POST['ChildID'])){echo 'checked="checked"';}?> type="checkbox" size=25></td>
+				    <input name="<?php echo $row_Sort['ChildID']; ?>" id="textbox" <?php if ($totalsmallgroup!=0){echo 'checked="checked"';}?> type="checkbox" size=25></td>
 				</tr>
 			    <?php } //close while?>
 			      <?php if (isset($_SESSION['MM_AccessLevel'])){ 
