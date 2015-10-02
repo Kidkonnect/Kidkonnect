@@ -57,7 +57,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        GetSQLValueString(date('z'), "text"),
                        GetSQLValueString(date('Hi'), "text"),
                        GetSQLValueString($_POST['Event'], "text"),
-                       GetSQLValueString($_POST['ParentEmail'], "text"));
+                       GetSQLValueString($_POST['PFirstName']." ".$_POST['PLastName']." ".$_POST['ParentEmail'], "text"));
 
     mysql_select_db($database_dbs, $dbs);
     $Result1 = mysql_query($insertSQL, $dbs) or die(mysql_error()); 
